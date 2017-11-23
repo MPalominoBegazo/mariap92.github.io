@@ -10,17 +10,18 @@ background-image: none;
 background-repeat: none;
 filter: none;
 filter: none;
-background-color:#f4d942;
+background-color:#F6D954;
 border: none;
 border-top: 1px solid;
+/* border-bottom: 1px solid; */
 border-color: #323F42;
 }
 
 .bg-primary{
-background-color:#f4d942;
+background-color:#F6D954;
 }
         
 /*this for transparent nav background*/
 .bg-nav{
-  background:rgba(244, 217, 66);            
+  background:#F6D954;            
 }
