@@ -1414,7 +1414,7 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
   width: 400px;
   padding: 15px;
   background: #ecedec;
-  /* background-image: url("../img/43-yellow-notebook.jpg"); */
+  background-image: url("../img/43-yellow-notebook.jpg");
 }
 
 .timeline ul li div::before {
@@ -1665,9 +1665,10 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
   background-image: url("../images/bgwhite");
 }
 
-/* .back img,p{
-  margin-left: 50px;
+.back img,p{
+  margin-left: 65px;
 }
 .back p{
+  margin-top: 10px;
   margin-left: 65px;
-} */
+}
