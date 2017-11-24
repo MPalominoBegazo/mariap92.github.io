@@ -109,7 +109,7 @@
 			$(this).parent().addClass('cur');
 
 			if (filterClass == 'all') {
-
+				var $filteredData = $data.find('li');
 
 			} else {
 				var $filteredData = $data.find('li[data-type~=' + filterClass + ']');

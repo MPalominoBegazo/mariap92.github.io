@@ -5,20 +5,23 @@
 .main-about .btn-clear:hover,
 .main-caption .btn-clear:hover
  {
-background-color: #F2BD49;
+background-color: #f4d942;
 }
 
+#brandColor{
+  margin-left: 0px;
+}
 
 .bg-primary{
   margin: 0px;
 }
 
 .border-color, .navbar-nav > li.current > a, .navbar-nav > li > a:hover, .link-attr a:hover, .main-about .btn-clear:hover, .main-caption .btn-clear:hover{
-border-color:#F2BD49;
+border-color:#f4d942;
 }
 .bg-black, .navbar-inverse{
  background-color:#818181;
 }
 .color-primary, ul#filterOptions li.cur a, ul#filterOptions li a:hover, .link-attr a:hover{
-color: #F2BD49;
+color: #f4d942;
 }
