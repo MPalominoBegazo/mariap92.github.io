@@ -79,105 +79,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   -o-transform: translate(-50%, 50%);
 }
 
-.bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-}
-
-.bubbles li {
-  position: absolute;
-  list-style: none;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: rgba(255,255,255,.2);
-  animation: animate 25s linear infinite;
-  bottom: -150px;
-}
-
-.bubbles li:nth-child(1) {
-  left: 25%;
-  width: 80px;
-  height: 80px;
-  animation-delay: 0;
-  
-}
-
-.bubbles li:nth-child(2) {
-  width: 20px;
-  height: 20px;
-  left: 10%;
-  animation-delay: 2s; 
-  animation-duration: 12s;
-}
-
-.bubbles li:nth-child(3) {
-  width: 20px;
-  height: 20px;
-  left: 70%;
-  animation-delay: 4s; 
-}
-.bubbles li:nth-child(4) {
-  width: 60px;
-  height: 60px;
-  left: 40%;
-  animation-delay: 0s;
-  animation-duration: 18s; 
-}
-.bubbles li:nth-child(5) {
-  width: 20px;
-  height: 20px;
-  left: 65%;
-  animation-delay: 0s; 
-}
-.bubbles li:nth-child(6) {
-  width: 110px;
-  height: 110px;
-  left: 75%;
-  animation-delay: 3s; 
-}
-.bubbles li:nth-child(7) {
-  width: 150px;
-  height: 150px;
-  left: 35%;
-  animation-delay: 7s; 
-}
-.bubbles li:nth-child(8) {
-  width: 25px;
-  height: 25px;
-  left: 50%;
-  animation-delay: 15s; 
-}
-.bubbles li:nth-child(9) {
-  width: 15px;
-  height: 15px;
-  left: 20%;
-  animation-delay: 2s; 
-  animation-duration: 35s; 
-}
-.bubbles li:nth-child(10) {
-  width: 150px;
-  height: 150px;
-  left: 85%;
-  animation-delay: 0s; 
-  animation-duration: 11s;
-}
-
-@keyframes animate {
-  0% {
-      transform: translateY(0) rotate(0deg);
-      opacity:1;
-      border-radius: 0;
-  }
-  100% {
-      transform: translateY(-1000px) rotate(720deg);
-      opacity:0;
-      border-radius: 50%;
-  }
-}
 
 
 /*CLOUDS*/
@@ -696,8 +597,8 @@ h1, .h1, h2, .h2, h3, .h3 {
   margin: 0;
   font-size: 70px;
   font-weight: 600;
-  color: #F2BD49;
-  text-shadow: -1px 0 #818181, 0 1px #818181, 1px 0 #818181, 0 -1px #818181;
+  color: #f4d942;
+  text-shadow: -0.5px 0 #818181, 0 0.5px #818181, 0.5px 0 #818181, 0 -0.5px #818181;
   font-family: 'Dancing Script', cursive;
   /* font-family: 'Satisfy', cursive; */
   /* color: #ffff; */
@@ -792,8 +693,8 @@ h1, .h1, h2, .h2, h3, .h3 {
   
 /* ========================================= title page ==================================== */
 .line-title{
-  border-top: 5px solid #F2BD49;
-  height: 1px;
+  /* border-top: 5px solid #f4d942;
+  height: 1px; */
   display: block;
   position: relative;
   margin:0 -15px;
@@ -818,6 +719,12 @@ padding: 0 40px;
 color:#7a7a7a;
 
 }
+
+#brandcolor{
+  /* margin-left: 0px;*/
+  margin-bottom: 0px;
+} 
+
 .title-page-gray h2{
 display: table;
 background: #f2f2f2;
@@ -930,7 +837,7 @@ background:#000;
   position:absolute;
   bottom:-55px;
   left:0; 
-  background:rgba(242, 189, 73, 0.8);
+  background:rgba(244, 217, 66, 0.8);
   width:100%;
   max-height:48px;
 }
@@ -1043,7 +950,7 @@ display:table-cell;
 width:48px;
 }
 .fa{
-  color: #F2BD49;
+  color: #f4d942;
   text-shadow: -0.5px 0 #818181, 0 0.5px #818181, 0.5px 0 #818181, 0 -0.5px #818181;
   
 }
@@ -1293,6 +1200,7 @@ font-size: 18px;
 }
 
 @media (max-width:767px){
+  
   font-size: 7px;
 }
 
@@ -1302,92 +1210,91 @@ font-size: 18px;
 
 
 .md-macbook-pro .md-lid {
-width: 45em;
-height: 30.625em;
-overflow: hidden;
-margin: 0 auto;
-position: relative;
-border-radius: 1.875em;
-border: solid 0.1875em #cdced1;
-background: #131313;
-}
-.md-macbook-pro .md-camera {
-width: 0.375em;
-height: 0.375em;
-margin: 0 auto;
-position: relative;
-top: 1.0625em;
-background: #000;
-border-radius: 100%;
-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
-}
-.md-macbook-pro .md-camera:after {
-content: "";
-display: block;
-width: 0.125em;
-height: 0.125em;
-position: absolute;
-left: 0.125em;
-top: 0.0625em;
-background: #353542;
-border-radius: 100%;
-}
-.md-macbook-pro .md-screen {
-width: 42.25em;
-height: 26.375em;
-margin: 0 auto;
-position: relative;
-top: 2.0625em;
- background: #1d1d1d;
-background: #fff;
-overflow: hidden;
-}
-.md-macbook-pro .md-screen img {
-width: 100%;
-}
-.md-macbook-pro .md-base {
-width: 100%;
-height: 0.9375em;
-position: relative;
-top: -0.75em;
-background: #c6c7ca;
-}
-.md-macbook-pro .md-base:after {
-content: "";
-display: block;
-width: 100%;
-height: 0.5em;
-margin: 0 auto;
-position: relative;
-bottom: -0.1875em;
-background: #b9babe;
-border-radius: 0 0 1.25em 1.25em;
-}
-.md-macbook-pro .md-base:before {
-content: "";
-display: block;
-width: 7.6875em;
-height: 0.625em;
-margin: 0 auto;
-position: relative;
-background: #a6a8ad;
-border-radius: 0 0 0.625em 0.625em;
-}
-.md-macbook-pro.md-glare .md-lid:after {
-content: "";
-display: block;
-width: 50%;
-height: 100%;
-position: absolute;
-top: 0;
-right: 0;
-border-radius: 0 1.25em 0 0;
-background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
-}
-
+  width: 45em;
+  height: 30.625em;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 1.875em;
+  border: solid 0.1875em #cdced1;
+  background: #131313;
+  }
+  .md-macbook-pro .md-camera {
+  width: 0.375em;
+  height: 0.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 1.0625em;
+  background: #000;
+  border-radius: 100%;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+  }
+  .md-macbook-pro .md-camera:after {
+  content: "";
+  display: block;
+  width: 0.125em;
+  height: 0.125em;
+  position: absolute;
+  left: 0.125em;
+  top: 0.0625em;
+  background: #353542;
+  border-radius: 100%;
+  }
+  .md-macbook-pro .md-screen {
+  width: 42.25em;
+  height: 26.375em;
+  margin: 0 auto;
+  position: relative;
+  top: 2.0625em;
+   background: #1d1d1d;
+  background: #fff;
+  overflow: hidden;
+  }
+  .md-macbook-pro .md-screen img {
+  width: 100%;
+  }
+  .md-macbook-pro .md-base {
+  width: 100%;
+  height: 0.9375em;
+  position: relative;
+  top: -0.75em;
+  background: #c6c7ca;
+  }
+  .md-macbook-pro .md-base:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5em;
+  margin: 0 auto;
+  position: relative;
+  bottom: -0.1875em;
+  background: #b9babe;
+  border-radius: 0 0 1.25em 1.25em;
+  }
+  .md-macbook-pro .md-base:before {
+  content: "";
+  display: block;
+  width: 7.6875em;
+  height: 0.625em;
+  margin: 0 auto;
+  position: relative;
+  background: #a6a8ad;
+  border-radius: 0 0 0.625em 0.625em;
+  }
+  .md-macbook-pro.md-glare .md-lid:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 1.25em 0 0;
+  background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+  }
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -1402,7 +1309,7 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #F2BD49;
+  background: #f4d942;
 }
 
 .timeline ul li::after {
@@ -1423,7 +1330,7 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
   width: 400px;
   padding: 15px;
   background: #ecedec;
-  background-image: url("../img/43-yellow-notebook.jpg");
+  /* background-image: url("../img/43-yellow-notebook.jpg"); */
 }
 
 .timeline ul li div::before {
@@ -1442,7 +1349,7 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #F2BD49 transparent transparent;
+  border-color: transparent #f4d942 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -1452,7 +1359,7 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F2BD49;
+  border-color: transparent transparent transparent #f4d942;
 }
 
 /* time {
@@ -1471,7 +1378,7 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
 }
 
 .timeline ul li.in-view::after {
-  background: #F2BD49;
+  background: #f4d942;
   /*background-image: url("img/abilities/javascript.png"); */
 }
 
@@ -1526,19 +1433,21 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F2BD49 transparent transparent;
+    border-color: transparent #f4d942 transparent transparent;
   }
 }
 
-.CVdownload{
-  background-color: #F2BD49;
+#CVdownload{
+  background-color: #f4d942;
   padding: 10px;
   margin: 10px auto;
   color: white;
+  text-decoration: none;
 }
 
-.CVdownload a:hover{
+#CVdownload a:hover{
   color: white;
+  text-decoration: none;
 }  
 
 /*IM A */
@@ -1573,7 +1482,7 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
 .content__container:after, .content__container:before {
   position: absolute;
   top: 0;
-  color: #F2BD49;
+  color: #f4d942;
   font-size: 42px;
   line-height: 40px;
   -webkit-animation-name: opacity;
@@ -1680,15 +1589,196 @@ background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 24
   background-image: url("../images/bgwhite");
 }
 
-.back img,p{
+#repositories a{
+  font-size: 25px;
+  background: transparent;
+  color: #818181;
+}
+
+.gitDemo{
+  margin-top: 20px;
+  background-color: #818181;
+  padding: 10px;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px auto;
+  color: white;
+}
+
+.gitDemo:hover{
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #8e8e8e;
+  border-bottom-color: #f4d942;
+}
+
+.gitbtn{
+  margin-top: 15px;
+}
+
+#repositories i{
+  position: absolute;
+  z-index: 10;
+  font-size: 30px;
+  background: transparent;
+  color: #3333;
+
+}
+
+/* .back img,p{
   margin-left: 65px;
 }
 .back p{
   margin-top: 10px;
   margin-left: 65px;
-}
+} */
 
 #contact .fa{
   font-size: 50px;
   margin: 15px;
+}
+@media (max-width: 1030px){
+  .content {
+    position: absolute;
+    left: 50%;
+    bottom: -500%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 160px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+  
+}
+@media (max-width: 420px) {
+  
+  .content {
+    position: absolute;
+    left: 50%;
+    bottom: -350%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 160px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 660px) {
+  
+  .content {
+    position: absolute;
+    left: 50%;
+    bottom: -350%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 160px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .md-macbook-pro {
+    display: block;
+    width: 55.3125em;
+    height: 31.875em;
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  .md-macbook-pro .md-lid {
+    width: 23em;
+    height: 19em;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 1.875em;
+    border: solid 0.1875em #cdced1;
+    background: #131313;
+  }
+  .md-macbook-pro .md-camera {
+    width: 0.375em;
+    height: 0.375em;
+    margin: 0 auto;
+    position: relative;
+    top: 1.0625em;
+    background: #000;
+    border-radius: 100%;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+  }
+  .md-macbook-pro .md-camera:after {
+    content: "";
+    display: block;
+    width: 0.125em;
+    height: 0.125em;
+    position: absolute;
+    left: 0.125em;
+    top: 0.0625em;
+    background: #353542;
+    border-radius: 100%;
+  }
+  .md-macbook-pro .md-screen {
+    width: 42.25em;
+    height: 26.375em;
+    margin: 0 auto;
+    position: relative;
+    top: 2.0625em;
+     background: #1d1d1d;
+    background: #fff;
+    overflow: hidden;
+  }
+  .md-macbook-pro .md-screen img {
+    width: 100%;
+  }
+  .md-macbook-pro .md-base {
+    width: 100%;
+    height: 0.9375em;
+    position: relative;
+    top: -0.75em;
+    background: #c6c7ca;
+  }
+  .md-macbook-pro .md-base:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5em;
+    margin: 0 auto;
+    position: relative;
+    bottom: -0.1875em;
+    background: #b9babe;
+    border-radius: 0 0 1.25em 1.25em;
+  }
+  .md-macbook-pro .md-base:before {
+    content: "";
+    display: block;
+    width: 7.6875em;
+    height: 0.625em;
+    margin: 0 auto;
+    position: relative;
+    background: #a6a8ad;
+    border-radius: 0 0 0.625em 0.625em;
+  }
+    .md-macbook-pro.md-glare .md-lid:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 1.25em 0 0;
+    background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    }
 }
