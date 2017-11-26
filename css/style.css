@@ -603,6 +603,11 @@ h1, .h1, h2, .h2, h3, .h3 {
   /* font-family: 'Satisfy', cursive; */
   /* color: #ffff; */
 }
+#aboutMore, #abilities, #work, #contact{
+  /* font-family: 'Patrick Hand', cursive; */
+  font-size:20px;
+  
+}
 .vert-text h2{
   color:#fff;
   font-size: 48px;
@@ -655,6 +660,8 @@ h1, .h1, h2, .h2, h3, .h3 {
   }
   
   .navbar {
+    /* font-family: 'Patrick Hand', cursive; */
+    /* font-size:32px; */
   border-radius: 0px;
   min-height: 54px;
   margin-bottom: 0px;
@@ -666,6 +673,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   float: left;
   height: inherit;
   padding: 3px 15px;
+  /* font-family: 'Patrick Hand', cursive; */
   font-size: 18px;
   line-height: 48px;
   color:#fff;
@@ -958,7 +966,8 @@ width:48px;
 /* Footer */
 
 footer {
-   color: #ffffff;
+  /* font-family: 'Patrick Hand', cursive; */
+  color: #ffffff;
   background: #222121;
   padding: 20px 0;
 }
@@ -1362,6 +1371,16 @@ font-size: 18px;
   border-color: transparent transparent transparent #f4d942;
 }
 
+.timeline p{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 17px;
+  text-align: justify;
+}
+#accordion {
+  /* font-family: 'Patrick Hand', cursive; */
+  font-size: 17px;
+  text-align: justify;
+}
 /* time {
   display: block;
   font-size: 1.2rem;
@@ -1585,6 +1604,9 @@ font-size: 18px;
   }
 }
 
+#mobile{
+  display: none;
+}
 #abilities{
   background-image: url("../images/bgwhite");
 }
@@ -1593,6 +1615,15 @@ font-size: 18px;
   font-size: 25px;
   background: transparent;
   color: #818181;
+}
+
+.trivia{
+  width: 41%;
+}
+
+ul{
+  text-decoration: none;
+  list-style: none;
 }
 
 .gitDemo{
