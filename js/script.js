@@ -20,7 +20,6 @@
 				}
 			}
 		}
-	
 		// listen for events
 		window.addEventListener("load", callbackFunc);
 		window.addEventListener("resize", callbackFunc);
@@ -90,7 +89,6 @@
 		imgHover();
 	}
 
-
 	if ($().quicksand) {
 
 		var $data = $("ul.container_folio").clone();
@@ -99,12 +97,10 @@
 
 	
 		$('#filterOptions li a').click(function (e) {
-			// reset the active class on all the buttons
+
 			$('#filterOptions li').removeClass('cur');
 			$('#filterOptions li a').removeClass('cur');
-
-			
-			// Use the last category class as the category to filter by. This means that multiple categories are not supported (yet)
+		
 			var filterClass = $(this).attr('class').split(' ').slice(0)[0];
 			$(this).parent().addClass('cur');
 
@@ -120,18 +116,14 @@
 				adjustHeight: false,
 				easing: 'swing'
 			}, function () {
-
 				
 				imgHover();
 			});
-
 
 			$(this).addClass("cur");
 
 			return false;
 		});
-
-
 	}
 
 	$(".navbar").sticky({ topSpacing: 0 });
@@ -140,7 +132,6 @@
 
 	navScroll();
 	winHeight();
-
 
 })();
 $(window).resize(function () {
@@ -182,25 +173,17 @@ function navScroll() {
 			$('.navbar-inverse').removeClass('bg-nav');
 
 		}
-
 		if (top > 20) {
 
 			$('.btnAbout').css({
 				'position': 'absolute'
 			});
-
-
 		} else {
-
 			$('.btnAbout').css({
 				'position': 'fixed'
 			});
-
-
 		}
-
 	});
-
 }
 function winHeight() {
 	var wHeight = $(window).height();
