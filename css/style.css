@@ -1164,6 +1164,11 @@ font-size: 18px;
   border-bottom-left-radius: 0px;
       
 }
+#collapseOne, #collapseTwo, #collapseThree{
+  font-family: 'Lato';
+  font-size: 15px;
+}
+
 .panel-heading {
   border: none;
   background-color: #818181;
@@ -1287,7 +1292,7 @@ font-size: 18px;
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-
+  font-family: 'Lato', sans-serif;
   padding: 50px 0;
 }
 
@@ -1350,8 +1355,7 @@ font-size: 18px;
 }
 
 .timeline p{
-  font-family: 'Patrick Hand', cursive;
-  font-size: 17px;
+  font-size: 16px;
   text-align: justify;
 }
 #accordion {
