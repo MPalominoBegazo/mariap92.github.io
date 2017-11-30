@@ -1169,8 +1169,8 @@ font-size: 18px;
       
 }
 #collapseOne, #collapseTwo, #collapseThree{
-  font-family: 'Lato';
-  font-size: 15px;
+  /* font-family: 'Lato'; */
+  font-size: 14px;
 }
 
 .panel-heading {
@@ -1296,7 +1296,7 @@ font-size: 18px;
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   padding: 50px 0;
 }
 
@@ -1359,7 +1359,7 @@ font-size: 18px;
 }
 
 .timeline p{
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
 }
 #accordion {
