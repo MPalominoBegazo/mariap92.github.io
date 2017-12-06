@@ -42,7 +42,7 @@ function winHeight() {
     }
 
     // Closes responsive menu when a scroll trigger link is clicked
-    $('.navbar-toggle').click(function () {
+    $('.js-scroll-trigger').click(function () {
         $('.navbar-collapse').collapse('hide');
     });
 
